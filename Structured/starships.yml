@@ -1,0 +1,7 @@
+starships:
+  "1701":
+    name: Enterprise
+    captain: "James T Kirk"
+  1701-D:
+    name: Enterprise
+    captain: "Jean-Luc Picard"
