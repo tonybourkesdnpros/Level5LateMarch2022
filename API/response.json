@@ -1,0 +1,309 @@
+{
+    "jsonrpc": "2.0",
+    "id": "EapiExplorer-1",
+    "result": [
+      {
+        "interfaces": {
+          "Vlan4090": {
+            "name": "Vlan4090",
+            "interfaceStatus": "connected",
+            "interfaceAddress": {
+              "ipAddr": {
+                "maskLen": 0,
+                "address": "0.0.0.0"
+              }
+            },
+            "ipv4Routable240": false,
+            "lineProtocolStatus": "up",
+            "mtu": 9164
+          },
+          "Vlan4091": {
+            "name": "Vlan4091",
+            "interfaceStatus": "connected",
+            "interfaceAddress": {
+              "ipAddr": {
+                "maskLen": 0,
+                "address": "0.0.0.0"
+              }
+            },
+            "ipv4Routable240": false,
+            "lineProtocolStatus": "up",
+            "mtu": 9164
+          },
+          "Vlan4092": {
+            "name": "Vlan4092",
+            "interfaceStatus": "connected",
+            "interfaceAddress": {
+              "ipAddr": {
+                "maskLen": 0,
+                "address": "0.0.0.0"
+              }
+            },
+            "ipv4Routable240": false,
+            "lineProtocolStatus": "up",
+            "mtu": 9164
+          },
+          "Vlan4093": {
+            "name": "Vlan4093",
+            "interfaceStatus": "connected",
+            "interfaceAddress": {
+              "ipAddr": {
+                "maskLen": 0,
+                "address": "0.0.0.0"
+              }
+            },
+            "ipv4Routable240": false,
+            "lineProtocolStatus": "up",
+            "mtu": 9164
+          },
+          "Vlan4094": {
+            "name": "Vlan4094",
+            "interfaceStatus": "connected",
+            "interfaceAddress": {
+              "ipAddr": {
+                "maskLen": 30,
+                "address": "192.168.255.1"
+              }
+            },
+            "ipv4Routable240": false,
+            "lineProtocolStatus": "up",
+            "mtu": 1500
+          },
+          "Ethernet3": {
+            "name": "Ethernet3",
+            "interfaceStatus": "connected",
+            "interfaceAddress": {
+              "ipAddr": {
+                "maskLen": 31,
+                "address": "192.168.103.0"
+              }
+            },
+            "ipv4Routable240": false,
+            "lineProtocolStatus": "up",
+            "mtu": 9214
+          },
+          "Vlan4089": {
+            "name": "Vlan4089",
+            "interfaceStatus": "connected",
+            "interfaceAddress": {
+              "ipAddr": {
+                "maskLen": 0,
+                "address": "0.0.0.0"
+              }
+            },
+            "ipv4Routable240": false,
+            "lineProtocolStatus": "up",
+            "mtu": 9164
+          },
+          "Ethernet4": {
+            "name": "Ethernet4",
+            "interfaceStatus": "connected",
+            "interfaceAddress": {
+              "ipAddr": {
+                "maskLen": 31,
+                "address": "192.168.103.2"
+              }
+            },
+            "ipv4Routable240": false,
+            "lineProtocolStatus": "up",
+            "mtu": 9214
+          },
+          "Loopback99": {
+            "name": "Loopback99",
+            "interfaceStatus": "connected",
+            "interfaceAddress": {
+              "ipAddr": {
+                "maskLen": 32,
+                "address": "192.168.199.99"
+              }
+            },
+            "ipv4Routable240": false,
+            "lineProtocolStatus": "up",
+            "mtu": 65535
+          },
+          "Vlan201": {
+            "name": "Vlan201",
+            "interfaceStatus": "connected",
+            "interfaceAddress": {
+              "ipAddr": {
+                "maskLen": 24,
+                "address": "10.10.10.1"
+              }
+            },
+            "ipv4Routable240": false,
+            "lineProtocolStatus": "up",
+            "mtu": 1500
+          },
+          "Vlan202": {
+            "name": "Vlan202",
+            "interfaceStatus": "connected",
+            "interfaceAddress": {
+              "ipAddr": {
+                "maskLen": 24,
+                "address": "10.10.20.1"
+              }
+            },
+            "ipv4Routable240": false,
+            "lineProtocolStatus": "up",
+            "mtu": 1500
+          },
+          "Loopback0": {
+            "name": "Loopback0",
+            "interfaceStatus": "connected",
+            "interfaceAddress": {
+              "ipAddr": {
+                "maskLen": 32,
+                "address": "192.168.101.11"
+              }
+            },
+            "ipv4Routable240": false,
+            "lineProtocolStatus": "up",
+            "mtu": 65535
+          },
+          "Loopback1": {
+            "name": "Loopback1",
+            "interfaceStatus": "connected",
+            "interfaceAddress": {
+              "ipAddr": {
+                "maskLen": 32,
+                "address": "192.168.102.11"
+              }
+            },
+            "ipv4Routable240": false,
+            "lineProtocolStatus": "up",
+            "mtu": 65535
+          },
+          "Ethernet5": {
+            "name": "Ethernet5",
+            "interfaceStatus": "connected",
+            "interfaceAddress": {
+              "ipAddr": {
+                "maskLen": 31,
+                "address": "192.168.103.4"
+              }
+            },
+            "ipv4Routable240": false,
+            "lineProtocolStatus": "up",
+            "mtu": 9214
+          },
+          "Management0": {
+            "name": "Management0",
+            "interfaceStatus": "connected",
+            "interfaceAddress": {
+              "ipAddr": {
+                "maskLen": 24,
+                "address": "192.168.0.21"
+              }
+            },
+            "ipv4Routable240": false,
+            "lineProtocolStatus": "up",
+            "mtu": 1500
+          },
+          "Vlan402": {
+            "name": "Vlan402",
+            "interfaceStatus": "connected",
+            "interfaceAddress": {
+              "ipAddr": {
+                "maskLen": 24,
+                "address": "10.10.100.1"
+              }
+            },
+            "ipv4Routable240": false,
+            "lineProtocolStatus": "up",
+            "mtu": 1500
+          },
+          "Vlan401": {
+            "name": "Vlan401",
+            "interfaceStatus": "connected",
+            "interfaceAddress": {
+              "ipAddr": {
+                "maskLen": 24,
+                "address": "10.10.200.1"
+              }
+            },
+            "ipv4Routable240": false,
+            "lineProtocolStatus": "up",
+            "mtu": 1500
+          },
+          "Vlan301": {
+            "name": "Vlan301",
+            "interfaceStatus": "connected",
+            "interfaceAddress": {
+              "ipAddr": {
+                "maskLen": 24,
+                "address": "10.10.10.1"
+              }
+            },
+            "ipv4Routable240": false,
+            "lineProtocolStatus": "up",
+            "mtu": 1500
+          },
+          "Vlan302": {
+            "name": "Vlan302",
+            "interfaceStatus": "connected",
+            "interfaceAddress": {
+              "ipAddr": {
+                "maskLen": 24,
+                "address": "10.10.20.1"
+              }
+            },
+            "ipv4Routable240": false,
+            "lineProtocolStatus": "up",
+            "mtu": 1500
+          },
+          "Vlan102": {
+            "name": "Vlan102",
+            "interfaceStatus": "connected",
+            "interfaceAddress": {
+              "ipAddr": {
+                "maskLen": 24,
+                "address": "10.10.20.1"
+              }
+            },
+            "ipv4Routable240": false,
+            "lineProtocolStatus": "up",
+            "mtu": 1500
+          },
+          "Vlan101": {
+            "name": "Vlan101",
+            "interfaceStatus": "connected",
+            "interfaceAddress": {
+              "ipAddr": {
+                "maskLen": 24,
+                "address": "10.10.10.1"
+              }
+            },
+            "ipv4Routable240": false,
+            "lineProtocolStatus": "up",
+            "mtu": 1500
+          },
+          "Vlan502": {
+            "name": "Vlan502",
+            "interfaceStatus": "connected",
+            "interfaceAddress": {
+              "ipAddr": {
+                "maskLen": 24,
+                "address": "10.10.202.1"
+              }
+            },
+            "ipv4Routable240": false,
+            "lineProtocolStatus": "up",
+            "mtu": 1500
+          },
+          "Vlan501": {
+            "name": "Vlan501",
+            "interfaceStatus": "connected",
+            "interfaceAddress": {
+              "ipAddr": {
+                "maskLen": 24,
+                "address": "10.10.201.1"
+              }
+            },
+            "ipv4Routable240": false,
+            "lineProtocolStatus": "up",
+            "mtu": 1500
+          }
+        }
+      }
+    ]
+  }
