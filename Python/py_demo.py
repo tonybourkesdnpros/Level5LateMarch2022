@@ -65,8 +65,7 @@ response = json.load(file)
 # print(response['jsonrpc'])
 
 
-for switch in underlay:
-    print(switch+":")
+def generate_iface(switch):
     for interface in underlay[switch]['interfaces']:
         print("interface", interface)
         ip = str(underlay[switch]['interfaces'][interface]['ipv4'])
@@ -76,3 +75,5 @@ for switch in underlay:
             print("  no switchsport")
             print("  mtu 9214")
 
+
+generate_iface("spine1-DC3")
