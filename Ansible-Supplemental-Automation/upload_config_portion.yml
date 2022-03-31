@@ -1,0 +1,8 @@
+--- 
+- hosts: leaf1-DC1
+  name: Upload config portion
+  tasks:
+  - name: Upload file
+    arista.eos.eos_config:
+      src: "vlan1000.cfg"
+      save_when: always

@@ -1,0 +1,12 @@
+---
+- hosts: DC1
+  name: Add a banner to switch or switches
+  tasks:
+  - name: Add a message of the day banner to switch or switches
+    arista.eos.eos_banner:
+      banner: login
+      text: |
+        Where we're going, we don't need roads
+      state: absent
+
+ 

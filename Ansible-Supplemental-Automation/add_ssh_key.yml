@@ -1,0 +1,21 @@
+---
+- hosts: all
+  name: Add SSH user and key
+  tasks:
+  - name: Add user account
+    eos_user:
+      name: automator
+      state: present
+      nopassword: yes
+  - name: Set parameters 
+    eos_user:
+      name: automator
+      privilege: 15
+      role: network-admin
+      nopassword: yes
+      state: present
+  - name: Add SSH key
+    eos_user:
+      name: automator
+      sshkey: "{{ lookup('file', '/home/coder/project/persist/SSH/automator.public') }}"
+      state: present

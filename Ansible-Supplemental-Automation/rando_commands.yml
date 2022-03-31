@@ -1,0 +1,9 @@
+--- 
+- hosts: leaf1-DC1
+  name: Arbitrary Command
+  tasks:
+  - name: run multiple commands on remote nodes
+    arista.eos.eos_command:
+      commands:
+      - config
+      - vlan 20
