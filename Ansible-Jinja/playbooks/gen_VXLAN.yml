@@ -1,0 +1,16 @@
+---
+- name: Create VXLAN overlay config for leafs
+  hosts: leafs_DC1, leafs_DC2
+  tasks:
+  - name: Load underlay data model
+    include_vars:
+      file: "{{lookup('env','PWD')}}/vars/underlay.yml"
+      name: underlay
+  - name: Load VXLAN data model
+    include_vars:
+      file: "{{lookup('env','PWD')}}/vars/VXLAN.yml"
+      name: VXLAN
+  - name: Run the template
+    template:
+      src: "{{lookup('env','PWD')}}/templates/VXLAN.j2"
+      dest: "{{lookup('env','PWD')}}/configs/dynamic/{{inventory_hostname}}/{{inventory_hostname}}_VXLAN.txt"

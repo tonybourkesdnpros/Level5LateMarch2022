@@ -1,0 +1,5 @@
+This is a crew report for starships in the inventory
+
+There is a ship called Enterprise and their captain is Captain Kirk
+There is a ship called Enterprise-D and their captain is Captain Picard
+There is a ship called Voyager and their captain is Captain Janeway

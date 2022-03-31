@@ -1,0 +1,25 @@
+---
+- name: Create underlay config for leafs
+  hosts: leafs_DC1, leafs_DC2
+  tasks:
+  - name: Load underlay data model
+    include_vars:
+      file: "{{lookup('env','PWD')}}/vars/underlay.yml"
+      name: underlay
+  - name: Run the template
+    template:
+      src: "{{lookup('env','PWD')}}/templates/leaf_underlay.j2"
+      dest: "{{lookup('env','PWD')}}/configs/dynamic/{{inventory_hostname}}/{{inventory_hostname}}_underlay.txt"
+
+
+- name: Create underlay config for Spines
+  hosts: spines_DC1, spines_DC2
+  tasks:
+  - name: Load underlay data model
+    include_vars:
+      file: "{{lookup('env','PWD')}}/vars/underlay.yml"
+      name: underlay
+  - name: Run the template
+    template:
+      src: "{{lookup('env','PWD')}}/templates/spine_underlay.j2"
+      dest: "{{lookup('env','PWD')}}/configs/dynamic/{{inventory_hostname}}/{{inventory_hostname}}_underlay.txt"

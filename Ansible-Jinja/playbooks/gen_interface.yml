@@ -1,0 +1,12 @@
+---
+- name: Create report
+  hosts: DC1, DC2
+  tasks:
+  - name: Load underlay data model
+    include_vars:
+      file: "{{lookup('env','PWD')}}/vars/underlay.yml"
+      name: underlay
+  - name: Run the template
+    template:
+      src: "{{lookup('env','PWD')}}/templates/interfaces.j2"
+      dest: "{{lookup('env','PWD')}}/configs/dynamic/{{inventory_hostname}}/{{inventory_hostname}}_interfaces.txt"

@@ -1,0 +1,12 @@
+---
+- name: Create report
+  hosts: starfleet
+  tasks:
+  - name: Load demo data model
+    include_vars:
+      file: "{{lookup('env','PWD')}}/vars/demo_model.yml"
+      name: ships
+  - name: Run the template
+    template:
+      src: "{{lookup('env','PWD')}}/templates/crew_report.j2"
+      dest: "{{lookup('env','PWD')}}/configs/report.txt"

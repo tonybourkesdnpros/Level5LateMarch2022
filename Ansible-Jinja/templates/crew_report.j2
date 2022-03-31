@@ -1,0 +1,5 @@
+This is a crew report for starships in the inventory
+
+{% for ship in ships %}
+There is a ship called {{ship}} and their captain is Captain {{ships[ship]['crew']['Captain']}}
+{% endfor %}

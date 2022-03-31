@@ -1,0 +1,29 @@
+---
+- name: MLAG Left Assemble
+  hosts: leaf_leafs
+  tasks:
+  - name: Copy MLAG Left
+    copy:
+      src: "{{lookup('env','PWD')}}/configs/static/MLAG-Left.cfg"
+      dest: "{{lookup('env','PWD')}}/configs/dynamic/{{inventory_hostname}}"
+- name: MLAG Right Assemble
+  hosts: right_leafs
+  tasks:
+  - name: Copy MLAG Right
+    copy:
+      src: "{{lookup('env','PWD')}}/configs/static/MLAG-Right.cfg"
+      dest: "{{lookup('env','PWD')}}/configs/dynamic/{{inventory_hostname}}"
+- name: Assemble configuration
+  hosts: DC1, DC2
+  tasks:
+  - name: Copy ATD-INFRA
+    copy:
+      src: "{{lookup('env','PWD')}}/configs/static/ATD-INFRA.cfg"
+      dest: "{{lookup('env','PWD')}}/configs/dynamic/{{inventory_hostname}}"
+
+  - name: Assemble Configurations
+    assemble:
+      src: "{{lookup('env','PWD')}}/configs/dynamic/{{inventory_hostname}}"
+      dest: "{{lookup('env','PWD')}}/configs/final/{{inventory_hostname}}_FINAL.cfg"
+
+  

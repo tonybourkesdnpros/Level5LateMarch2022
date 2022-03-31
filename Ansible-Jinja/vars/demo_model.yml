@@ -1,0 +1,15 @@
+Enterprise:
+  crew:
+    Captain: Kirk
+    FO: Spock
+    Engineer: Scotty
+Enterprise-D:
+  crew:
+    Captain: Picard
+    FO: Riker
+    Engineer: LaForge
+Voyager:
+  crew:
+    Captain: Janeway
+    FO: Chakotay
+    Engineer: Torres

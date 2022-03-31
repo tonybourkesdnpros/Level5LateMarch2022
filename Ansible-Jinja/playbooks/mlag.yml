@@ -1,0 +1,15 @@
+---
+- name: Configure left leafs for MLAG
+  hosts: left_leafs
+  tasks:
+  - name: Upload file
+    arista.eos.eos_config:
+      src: "{{lookup('env','PWD')}}/configs/static/MLAG-Left.cfg"
+      save_when: always
+- name: Configure right leafs for MLAG
+  hosts: right_leafs
+  tasks:
+  - name: Upload file
+    arista.eos.eos_config:
+      src: "{{lookup('env','PWD')}}/configs/static/MLAG-Right.cfg"
+      save_when: always
