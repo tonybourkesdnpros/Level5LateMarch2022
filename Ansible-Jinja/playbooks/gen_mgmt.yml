@@ -1,0 +1,12 @@
+---
+- name: Create management interface config
+  hosts: DC1, DC2
+  tasks:
+  - name: Load mgmt data model
+    include_vars:
+      file: "{{lookup('env','PWD')}}/vars/mgmt.yml"
+      name: mgmt
+  - name: Run the template
+    template:
+      src: "{{lookup('env','PWD')}}/templates/mgmt.j2"
+      dest: "{{lookup('env','PWD')}}/configs/dynamic/{{inventory_hostname}}/{{inventory_hostname}}_mgmt.txt"
